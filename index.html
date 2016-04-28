@@ -1,0 +1,33 @@
+<!doctype html>
+
+<!-- init code by jade allen cook -->
+
+<html ng-app="app" ng-controller="data">
+    <head>
+        <title></title>
+        <!-- css -->
+        <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <!-- js -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tabletop.js"></script>
+    </head>
+    
+    <body>
+        <!-- navigation bar -->
+        <div id="navbar">
+            <img src="img/black-signature.png" class="logo" />
+        </div>
+        <!-- angular app container -->
+        <div id="app" ng-view></div>
+    </body>
+    
+    <footer>
+        <!-- js -->
+        <script src="js/data.js"></script>
+        <script src="js/routes.js"></script>
+        <script src="js/controllers.js"></script>
+    </footer>
+</html>
