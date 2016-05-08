@@ -57,3 +57,11 @@ div#quote-container div div.video, div#quote-container div div.suprise {
     cursor: pointer;
     margin: 35px 5px 0px 5px;
 }
+
+#ink-splat {
+    height: 75%;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+}
