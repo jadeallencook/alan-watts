@@ -1,33 +1,1057 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- init code by jade allen cook -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<html ng-app="app" ng-controller="data">
-    <head>
-        <title></title>
-        <!-- css -->
-        <link href="css/normalize.css" type="text/css" rel="stylesheet" />
-        <link href="css/style.css" type="text/css" rel="stylesheet" />
-        <!-- js -->
-        <script src="js/angular.min.js"></script>
-        <script src="js/angular-route.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/tabletop.js"></script>
-    </head>
-    
-    <body>
-        <!-- navigation bar -->
-        <div id="navbar">
-            <img src="img/black-signature.png" class="logo" />
+    <title>Genova - HTML5 Multipurpose Template</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+    <!-- CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/simpletextrotator.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line-font.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/flexslider.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <!-- Navigation start -->
+    <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top">
+
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/white-logo.png" alt="Genova">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="custom-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!--
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Multi Page</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="mp-index.html">Classic</a></li>
+                                    <li><a href="mp-index-simple-slider.html">Classic Slider</a></li>
+                                    <li><a href="mp-index-content-slider.html">Content Slider</a></li>
+                                    <li><a href="mp-index-text-rotate.html">Text Rotate 1</a></li>
+                                    <li><a href="mp-index-text-rotate-2.html">Text Rotate 2</a></li>
+                                    <li><a href="mp-index-agency-header.html">Agency</a></li>
+                                    <li><a href="mp-index-ken-burns.html">Ken Burns</a></li>
+                                    <li><a href="mp-index-parallax.html">Parallax 1</a></li>
+                                    <li><a href="mp-index-parallax-2.html">Parallax 2</a></li>
+                                    <li><a href="mp-index-parallax-3.html">Parallax 3</a></li>
+                                    <li><a href="mp-index-parallax-4.html">Parallax 4</a></li>
+                                    <li><a href="mp-index-parallax-5.html">Parallax 5</a></li>
+                                    <li><a href="mp-index-parallax-6.html">Parallax 6</a></li>
+                                    <li><a href="mp-index-video-bg.html">Video background 1</a></li>
+                                    <li><a href="mp-index-video-bg-2.html">Video background 2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">One Page</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="op-index.html">Classic</a></li>
+                                    <li><a href="op-index-simple-slider.html">Classic Slider</a></li>
+                                    <li><a href="op-index-content-slider.html">Content Slider</a></li>
+                                    <li><a href="op-index-text-rotate.html">Text Rotate 1</a></li>
+                                    <li><a href="op-index-text-rotate-2.html">Text Rotate 2</a></li>
+                                    <li><a href="op-index-agency-header.html">Agency</a></li>
+                                    <li><a href="op-index-ken-burns.html">Ken Burns</a></li>
+                                    <li><a href="op-index-parallax.html">Parallax 1</a></li>
+                                    <li><a href="op-index-parallax-2.html">Parallax 2</a></li>
+                                    <li><a href="op-index-parallax-3.html">Parallax 3</a></li>
+                                    <li><a href="op-index-parallax-4.html">Parallax 4</a></li>
+                                    <li><a href="op-index-parallax-5.html">Parallax 5</a></li>
+                                    <li><a href="op-index-parallax-6.html">Parallax 6</a></li>
+                                    <li><a href="op-index-video-bg.html">Video background 1</a></li>
+                                    <li><a href="op-index-video-bg-2.html">Video background 2</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="landing-page-index.html">Landing Page</a>
+                            </li>
+
+                            <li>
+                                <a href="studio-index.html">Studio</a>
+                            </li>
+
+                            <li>
+                                <a href="restaurant-index.html">Restaurent</a>
+                            </li>
+
+                            <li>
+                                <a href="resume-index.html">Resume</a>
+                            </li>
+
+                            <li>
+                                <a href="shop-index.html">Shop</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about-1.html">About 1</a></li>
+                                    <li><a href="about-2.html">About 2</a></li>
+                                    <li><a href="about-3.html">About 3</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="services-1.html">Services 1</a></li>
+                                    <li><a href="services-2.html">Services 2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Team</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="team-1.html">Team 1</a></li>
+                                    <li><a href="team-2.html">Team 2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pricing</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="pricing-1.html">Pricing 1</a></li>
+                                    <li><a href="pricing-2.html">Pricing 2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="gallery-2col.html">2 Columns</a></li>
+                                    <li><a href="gallery-3col.html">3 Columns</a></li>
+                                    <li><a href="gallery-4col.html">4 Columns</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="contact-1.html">Contact 1</a></li>
+                                    <li><a href="contact-2.html">Contact 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="page-faq.html">FAQ</a></li>
+                            <li><a href="404.html">Page 404</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu" role="menu">
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Boxed</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="portfolio-boxed-col2.html">2 Columns</a></li>
+                                    <li><a href="portfolio-boxed-col3.html">3 Columns</a></li>
+                                    <li><a href="portfolio-boxed-gutter-col2.html">2 Columns gutter</a></li>
+                                    <li><a href="portfolio-boxed-gutter-col3.html">3 Columns gutter</a></li>
+                                    <li><a href="portfolio-boxed-masonry-col2.html">2 Columns masonry</a></li>
+                                    <li><a href="portfolio-boxed-masonry-col3.html">3 Columns masonry</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Wide</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="portfolio-wide-col2.html">2 Columns</a></li>
+                                    <li><a href="portfolio-wide-col3.html">3 Columns</a></li>
+                                    <li><a href="portfolio-wide-gutter-col2.html">2 Columns gutter</a></li>
+                                    <li><a href="portfolio-wide-gutter-col3.html">3 Columns gutter</a></li>
+                                    <li><a href="portfolio-wide-masonry-col2.html">2 Columns masonry</a></li>
+                                    <li><a href="portfolio-wide-masonry-col3.html">3 Columns masonry</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Single</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="portfolio-single-1.html">Single 1</a></li>
+                                    <li><a href="portfolio-single-2.html">Single 2</a></li>
+                                    <li><a href="portfolio-single-3.html">Single 3</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu" role="menu">
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Standart</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog-standart-left.html">Sidebar Left</a></li>
+                                    <li><a href="blog-standart-right.html">Sidebar Right</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classic</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog-grid-2col.html">2 Columns</a></li>
+                                    <li><a href="blog-grid-3col.html">3 Columns</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masonry</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog-grid-masonry-2col.html">2 Columns</a></li>
+                                    <li><a href="blog-grid-masonry-3col.html">3 Columns</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Single</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog-single-left.html">Sidebar Left</a></li>
+                                    <li><a href="blog-single-right.html">Sidebar Right</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Layout</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop-grid-col-3.html">3 columns</a></li>
+                                    <li><a href="shop-grid-col-4.html">4 columns</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shop-product.html">Single Product</a></li>
+                            <li><a href="shop-checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="features-alerts-wells.html"><i class="fa fa-bolt"></i> Alerts and Wells</a></li>
+                            <li><a href="features-buttons.html"><i class="fa fa-link fa-sm"></i> Buttons</a></li>
+                            <li><a href="features-collapses-tabs.html"><i class="fa fa-tasks"></i> Collapses &amp; Tabs</a></li>
+                            <li><a href="features-content-box.html"><i class="fa fa-list-alt"></i> Contents Box</a></li>
+                            <li><a href="features-counter.html"><i class="fa fa-list-alt"></i> Counter</a></li>
+                            <li><a href="features-forms.html"><i class="fa fa-check-square-o"></i> Forms</a></li>
+                            <li><a href="features-icons.html"><i class="fa fa-star"></i> Icons</a></li>
+                            <li><a href="features-page-title.html"><i class="fa fa-font"></i> Page Title</a></li>
+                            <li><a href="features-parallax.html"><i class="fa fa-list-alt"></i> Parallax</a></li>
+                            <li><a href="features-progress-bars.html"><i class="fa fa-server"></i> Progress Bars</a></li>
+                            <li><a href="features-promo-boxes.html"><i class="fa fa-list-alt"></i> Promo Box</a></li>
+                            <li><a href="features-slider.html"><i class="fa fa-list-alt"></i> Slider</a></li>
+                            <li><a href="features-typography.html"><i class="fa fa-font"></i> Typography</a></li>
+                            <li><a href="features-video.html"><i class="fa fa-list-alt"></i> Video</a></li>
+                        </ul>
+                    </li>
+                    -->
+
+                    <li><a>&nbsp;</a></li>
+
+                    <!-- CART -->
+                    <li class="dropdown navbar-cart">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="icon-basket"></span>
+                            <span class="cart-item-number">2</span>
+                        </a>
+                        <ul class="dropdown-menu cart-list" role="menu">
+
+                            <li>
+                                <div class="navbar-cart-item clearfix">
+                                    <div class="navbar-cart-img">
+                                        <a href="#"><img src="assets/images/shop/4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="navbar-cart-title">
+                                        <a href="#">Zen Lectures</a>
+                                        <span class="cart-amount">2 × $5.00</span>
+                                        <br>
+                                        <strong class="cart-amount">$10.00</strong>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="navbar-cart-item clearfix">
+                                    <div class="navbar-cart-img">
+                                        <a href="#"><img src="assets/images/shop/4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="navbar-cart-title">
+                                        <a href="#">Money Lectures</a>
+                                        <span class="cart-amount">2 × $5.00</span>
+                                        <br>
+                                        <strong class="cart-amount">$10.00</strong>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <!-- navbar-cart-item -->
+                                <div class="clearfix">
+                                    <div class="cart-sub-totle">
+                                        <strong>Total: $20.00</strong>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="clearfix">
+                                    <a href="#" class="btn btn-border-w btn-sm">View cart</a>
+                                    <a href="#" class="btn btn-border-w btn-sm">Checkout</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- /CART -->
+
+                </ul>
+            </div>
+
         </div>
-        <!-- angular app container -->
-        <div id="app" ng-view></div>
-    </body>
-    
-    <footer>
-        <!-- js -->
-        <script src="js/data.js"></script>
-        <script src="js/routes.js"></script>
-        <script src="js/controllers.js"></script>
-    </footer>
+
+    </nav>
+    <!-- Navigation end -->
+
+    <!-- Home start -->
+    <section id="home" class="home-section home-fade home-full-height bg-dark" data-background="assets/images/alan-desk.jpg">
+
+        <div class="hs-caption">
+            <div class="caption-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <p class="hs-title-size-1 font-serif-i mb-30 wow fadeInDown" data-wow-delay=".3s">
+                                Out of your mind with
+                            </p>
+                            <h1 class="hs-title-size-5 font-alt mb-40 wow fadeIn" data-wow-delay=".5s">
+								ALAN WATTS
+							</h1>
+                            <a href="#about" class="section-scroll btn btn-border-w">Subscribe</a>
+                            <a href="#about" class="section-scroll btn btn-border-w">Suprise</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Home end -->
+
+    <!-- Wrapper start -->
+    <div class="main">
+
+        <!-- ABOUT -->
+        <section id="about" class="module bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-sm-4 text-right">
+                                <h2 class="h3 font-serif wow fadeIn">You are that vast thing that you see far, far off with great telescopes.</h2>
+                            </div>
+                            <div class="col-sm-7 col-sm-offset-1">
+                                <h3 class="h4">Who Is Alan Watts</h3>
+                                <p class="color-secondary">Born in England, he moved to the United States in 1938 and began Zen training in New York. Pursuing a career, he attended Seabury-Western Theological Seminary, where he received a master's degree in theology. Watts became an Episcopal priest in 1945, then left the ministry in 1950 and moved to California, where he joined the faculty of the American Academy of Asian Studies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /ABOUT -->
+
+        <hr class="divider no-margin">
+
+        <!-- Portfolio start -->
+        <section class="module pb-0">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <h2 class="font-serif wow fadeIn">Browse Lectures</h2>
+                    </div>
+
+                    <div class="col-sm-8">
+
+                        <ul id="filters" class="filter font-serif hidden-xs">
+                            <li><a href="#" data-filter="*" class="current wow fadeInUp">All</a></li>
+                            <li><a href="#" data-filter=".illustration" class="wow fadeInUp" data-wow-delay="0.2s">Zen</a></li>
+                            <li><a href="#" data-filter=".marketing" class="wow fadeInUp" data-wow-delay="0.4s">Wealth</a></li>
+                            <li><a href="#" data-filter=".photography" class="wow fadeInUp" data-wow-delay="0.6s">Science</a></li>
+                            <li><a href="#" data-filter=".webdesign" class="wow fadeInUp" data-wow-delay="0.8s">Meditation</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container -->
+
+            <!-- Portfolio list start -->
+            <ul id="works-grid" class="works-grid works-grid-3 works-hover-w">
+
+                <!-- Portfolio item start -->
+                <li class="work-item illustration webdesign">
+                    <div class="work-image">
+                        <img src="assets/images/albums/1.jpg" alt="">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">The Dynamics of Power</h3>
+                        <p class="work-descr font-serif-i">Sed posuere consectetur est at lobortis. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                        <a class="section-scroll btn">Add To Cart</a>
+                    </div>
+                </li>
+                <!-- Portfolio item end -->
+
+                <!-- Portfolio item start -->
+                <li class="work-item marketing photography">
+                    <div class="work-image">
+                        <img src="assets/images/albums/2.jpg" alt="">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">A Dangerous Conversation</h3>
+                        <p class="work-descr font-serif-i">Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.</p>
+                        <a class="section-scroll btn">Add To Cart</a>
+                    </div>
+                </li>
+                <!-- Portfolio item end -->
+
+                <!-- Portfolio item start -->
+                <li class="work-item illustration photography">
+                    <div class="work-image">
+                        <img src="assets/images/albums/3.jpg" alt="">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">Confusion Of The Symbol With The Reality</h3>
+                        <p class="work-descr font-serif-i">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <a class="section-scroll btn">Add To Cart</a>
+                    </div>
+                </li>
+                <!-- Portfolio item end -->
+
+                <!-- Portfolio item start -->
+                <li class="work-item marketing photography">
+                    <div class="work-image">
+                        <img src="assets/images/albums/4.jpg" alt="">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">A Change In Human Civilization</h3>
+                        <p class="work-descr font-serif-i">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</p>
+                        <a class="section-scroll btn">Add To Cart</a>
+                    </div>
+                </li>
+                <!-- Portfolio item end -->
+
+                <!-- Portfolio item start -->
+                <li class="work-item illustration webdesign">
+                    <div class="work-image">
+                        <img src="assets/images/albums/5.jpg" alt="">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">The Art of Meditation</h3>
+                        <p class="work-descr font-serif-i">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <a class="section-scroll btn">Add To Cart</a>
+                    </div>
+                </li>
+                <!-- Portfolio item end -->
+
+                <!-- Portfolio item start -->
+                <li class="work-item marketing webdesign">
+                    <div class="work-image">
+                        <img src="assets/images/albums/6.jpg" alt="">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">Accepting Death</h3>
+                        <p class="work-descr font-serif-i">Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+                        <a class="section-scroll btn">Add To Cart</a>
+                    </div>
+                </li>
+                <!-- Portfolio item end -->
+
+            </ul>
+            <!-- Portfolio list end -->
+
+        </section>
+        <!-- Portfolio end -->
+
+
+
+        <!-- About start -->
+        <section class="module bg-light text-center">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-8 col-sm-offset-2">
+
+                        <h2 class="module-title-bg text-center font-serif-i">The Nature of Consiousness</h2>
+                        <p class="module-subtitle">
+                            I find it a little difficult to say what the subject matter of this seminar is going to be, because it's too fundamental to give it a title. I'm going to talk about what there is. Now the first thing that we have to do is to get our perspectives with some background about the basic ideas that, as Westerners living today in the United States, influence our everyday common sense, our fundamental notions about what life is about. And there are historical origins for this which influence us more strongly than most people realize. Ideas of the world which are built into the very nature of the language we use, and of our ideas of logic, and of what makes sense altogether.
+                        </p>
+                        <img src="assets/images/black-logo.png" class="signeture" alt="signture" />
+
+                    </div>
+
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </section>
+        <!-- About end -->
+
+        <!-- Promo box -->
+        <section class="promo-box bg-dark no-margin">
+            <div class="container">
+                <div class="row promo">
+                    <!-- Add class 'cta-image-side-left' for 'cta-image-bottom' OR 'cta-image-top' for the left side column -->
+                    <div class="col-md-4 promo-col">
+                        <img alt="image" class="img-responsive center-block cta-image-top-bottom cta-image-side-left" src="assets/images/photo-frame.png">
+                    </div>
+                    <div class="col-md-8 promo-col">
+                        <h2 class="font-serif mb-20">Saints need sinners.</h2>
+                        <h5>Advice? I don’t have advice. Stop aspiring and start writing. If you’re writing, you’re a writer. Write like you’re a goddamn death row inmate and the governor is out of the country and there’s no chance for a pardon. Write like you’re clinging to the edge of a cliff, white knuckles, on your last breath, and you’ve got just one last thing to say, like you’re a bird flying over us and you can see everything, and please, for God’s sake, tell us something that will save us from ourselves. Take a deep breath and tell us your deepest, darkest secret, so we can wipe our brow and know that we’re not alone. Write like you have a message from the king. Or don’t. Who knows, maybe you’re one of the lucky ones who doesn’t have to.</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Promo box -->
+
+        <!-- Team start -->
+        <section class="module">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <h2 class=" module-title-bg font-serif wow fadeIn">Our Team</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    </div>
+
+                </div>
+                <!-- .row -->
+
+                <div class="row">
+
+                    <!-- Team item star -->
+                    <div class="col-sm-6 col-md-4 mb-sm-20 wow fadeIn animated" data-wow-delay="800ms">
+
+                        <div class="team-item hover-light">
+                            <div class="team-image">
+                                <img src="assets/images/13.jpg" alt="">
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Hi all</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.</p>
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        <a href="#"><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-descr">
+                                <div class="team-name font-alt">Mark Watts</div>
+                                <div class="team-role font-serif-i">Film Maker</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Team item end -->
+
+                    <!-- Team item star -->
+                    <div class="col-sm-6 col-md-4 mb-sm-20 wow fadeIn animated" data-wow-delay="800ms">
+
+                        <div class="team-item hover-light">
+                            <div class="team-image">
+                                <img src="assets/images/13.jpg" alt="">
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Good day</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.</p>
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        <a href="#"><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-descr">
+                                <div class="team-name font-alt">Jade Allen Cook</div>
+                                <div class="team-role font-serif-i">Digital Artist</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Team item end -->
+
+                    <!-- Team item star -->
+                    <div class="col-sm-6 col-md-4 mb-sm-20 wow fadeIn animated" data-wow-delay="800ms">
+
+                        <div class="team-item hover-light">
+                            <div class="team-image">
+                                <img src="assets/images/13.jpg" alt="">
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Hello</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.</p>
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        <a href="#"><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-descr">
+                                <div class="team-name font-alt">Annie Tichenor</div>
+                                <div class="team-role font-serif-i">Content Writer</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Team item end -->
+                </div>
+                
+                <br />
+                
+                <div class="row">
+                    
+                    <!-- Team item star -->
+                    <div class="col-sm-6 col-md-4 mb-sm-20 wow fadeIn animated" data-wow-delay="800ms">
+
+                        <div class="team-item hover-light">
+                            <div class="team-image">
+                                <img src="assets/images/13.jpg" alt="">
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Hello</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.</p>
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        <a href="#"><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-descr">
+                                <div class="team-name font-alt">Noah</div>
+                                <div class="team-role font-serif-i"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Team item end -->
+
+                    <!-- Team item star -->
+                    <div class="col-sm-6 col-md-4 mb-sm-20 wow fadeIn animated" data-wow-delay="800ms">
+
+                        <div class="team-item hover-light">
+                            <div class="team-image">
+                                <img src="assets/images/13.jpg" alt="">
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Hello</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.</p>
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        <a href="#"><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-descr">
+                                <div class="team-name font-alt">LuLu</div>
+                                <div class="team-role font-serif-i"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Team item end -->
+
+                    <!-- Team item star -->
+                    <div class="col-sm-6 col-md-4 mb-sm-20 wow fadeIn animated" data-wow-delay="800ms">
+
+                        <div class="team-item hover-light">
+                            <div class="team-image">
+                                <img src="assets/images/13.jpg" alt="">
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Hello</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.</p>
+                                    <div class="team-social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        <a href="#"><i class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-descr">
+                                <div class="team-name font-alt">Someone Else</div>
+                                <div class="team-role font-serif-i"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Team item end -->
+
+                </div>
+                <!-- .row -->
+
+            </div>
+        </section>
+        <!-- Team end -->
+
+        <!-- Testimonials start -->
+        <section class="module bg-dark-60 pb-0" data-background="assets/images/11.jpg">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="module-title-bg font-serif text-center">What Others Are Saying</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-slider pb-140">
+                <ul class="slides">
+
+                    <!-- Slide 1 start -->
+                    <li>
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-sm-12">
+                                    <div class="module-icon">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- .row -->
+
+                            <div class="row">
+
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text">
+                                        Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                                    </blockquote>
+                                </div>
+
+                            </div>
+                            <!-- .row -->
+
+                            <div class="row">
+
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption">
+                                            <div class="testimonial-title font-serif-i">John Doe -<span class="testimonial-descr"> California</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- .row -->
+
+                        </div>
+                        <!-- .container -->
+                    </li>
+                    <!-- Slide 1 end -->
+
+                    <!-- Slide 1 start -->
+                    <li>
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-sm-12">
+                                    <div class="module-icon">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- .row -->
+
+                            <div class="row">
+
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text">
+                                        Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                                    </blockquote>
+                                </div>
+
+                            </div>
+                            <!-- .row -->
+
+                            <div class="row">
+
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption">
+                                            <div class="testimonial-title font-serif-i">Jane Smith -<span class="testimonial-descr"> Michigan</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- .row -->
+
+                        </div>
+                        <!-- .container -->
+                    </li>
+                    <!-- Slide 1 end -->
+
+
+                </ul>
+            </div>
+            <!-- .testimonials-slider -->
+        </section>
+        <!-- Testimonials end -->
+
+        <!-- Divider -->
+        <hr class="divider-w">
+        <!-- Divider -->
+
+        <!-- Blog masonry start -->
+        <section class="module">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="module-title-bg font-serif text-center">Lastest News</h2>
+                    </div>
+                </div>
+
+                <!-- Content column start -->
+                <div class="row post-columns post-masonry">
+
+                    <!-- Post item start -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+
+                        <div class="post">
+
+                            <div class="post-thumbnail">
+                                <a href="blog-single-right.html"><img src="assets/images/blog/cabins.jpg" alt=""></a>
+                            </div>
+
+                            <div class="post-header text-center">
+                                <div class="post-meta">
+                                    20.01.16 | <a href="#" class="font-serif-i">Current</a>
+                                </div>
+                                <h2 class="post-title font-serif"><a href="blog-single-right.html">Building Cabins</a></h2>
+                            </div>
+
+                            <div class="post-entry">
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Post item end -->
+
+                    <!-- Post item start -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+
+                        <div class="post">
+
+                            <div class="post-thumbnail">
+                                <a href="blog-single-right.html"><img src="assets/images/blog/rare-images.jpg" alt=""></a>
+                            </div>
+
+                            <div class="post-header text-center">
+                                <div class="post-meta">
+                                    20.01.16 | <a href="#" class="font-serif-i">Photos</a>
+                                </div>
+                                <h2 class="post-title font-serif"><a href="blog-single-right.html">Rare Images</a></h2>
+                            </div>
+
+                            <div class="post-entry">
+                                <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Post item end -->
+
+                    <!-- Post item start -->
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+
+                        <div class="post">
+
+                            <div class="post-thumbnail">
+                                <a href="blog-single-right.html"><img src="assets/images/blog/wood.jpg" alt=""></a>
+                            </div>
+
+                            <div class="post-header text-center">
+                                <div class="post-meta">
+                                    20.01.16 | <a href="#" class="font-serif-i">Art</a>
+                                </div>
+                                <h2 class="post-title font-serif"><a href="blog-single-right.html">Wood Texture</a></h2>
+                            </div>
+
+                            <div class="post-entry">
+                                <p>Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Post item end -->
+
+                </div>
+                <!-- Content column end -->
+
+            </div>
+        </section>
+        <!-- Blog masonry start -->
+
+
+        <!-- Callout start -->
+        <section class="module-small bg-dark-60" data-background="assets/images/11.jpg">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+
+                        <div class="callout-text">
+                            <h2 class="callout-title font-serif">Have Something On Your Mind?</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-2">
+
+                        <div class="callout-btn-box">
+                            <a href="#" class="btn btn-border-w">Send Us A Message</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- .row -->
+
+            </div>
+        </section>
+        <!-- Callout end -->
+
+        <!-- Divider -->
+        <hr class="divider-d">
+        <!-- Divider -->
+
+        <!-- Footer start -->
+        <footer class="footer bg-dark">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <p class="copyright">© 2016 <a href="index.html">Alan Watts</a>, All Rights Reserved. Theme by Creamedia. Revamped by Jade Allen Cook.</p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="footer-social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .row -->
+
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Wrapper start -->
+
+    <!-- Javascript files -->
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="assets/js/gmaps.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/jquery.flexslider-min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.parallax-1.1.3.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
 </html>
