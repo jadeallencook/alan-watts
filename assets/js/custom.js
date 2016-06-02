@@ -740,7 +740,11 @@
 
     // after gDoc loads
     function insertDoc(data, tabletop) {
-        console.log(data.videos);
+        // caching
+        var layout = data.layout.elements[0];
+        var layoutArray = data.layout.elements;
+        // basic info
+        $('title').text(layout.title);
     }
 
     // calling and appending gDoc info
