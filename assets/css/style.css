@@ -3918,13 +3918,7 @@ Vertival margin, padding
 /* custom updates */
 
 section#home div.caption-content div.container {
-    margin-top: 50%;
-}
-
-@media screen and (min-width: 1200px) {
-    section#home div.caption-content div.container {
-        margin-top: 40%;
-    }
+    margin-top: 25%;
 }
 
 ul.dropdown-menu.cart-list {
