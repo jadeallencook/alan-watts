@@ -3917,6 +3917,13 @@ Vertival margin, padding
 
 /* custom updates */
 
+img#photo-frame {
+    z-index: 9999;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -250px;
+}
+
 section#home div.caption-content div.container {
     margin-top: 25%;
 }
