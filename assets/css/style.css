@@ -3936,6 +3936,17 @@ p.work-descr {
     color: #333;
 }
 
+a.call-btn {
+    background-color: rgba(255,255,255,0.50);
+    color: #000;
+    border: double rgba(255,255,255,0.75) .25em;
+}
+
+a.call-btn:hover {
+    background-color: rgba(255,255,255,0.75);
+    color: #000;
+}
+
 /* navbar phone settings */
 
 @media screen and (max-width: 800px) {
