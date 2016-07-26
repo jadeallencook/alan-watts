@@ -3958,3 +3958,41 @@ a.call-btn:hover {
         display: none;
     }
 }
+
+div#video-section {
+    text-align: center;
+}
+
+div#video-section div {
+    padding: 15px;
+    text-align: center;
+}
+
+div.featured-video {
+    height: 60px;
+    width: 75%;
+}
+
+div#video-1 {
+    background-image: url('http://img.youtube.com/vi/NWnVpUpehRI/default.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0px auto;
+}
+
+div#video-1:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+span.video-title {
+    font-size: 1em;
+}
+
+div#video-section {
+    margin-top: 100px;
+}
+
+div#video-btns {
+    margin-top: 50px;
+}

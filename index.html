@@ -52,6 +52,21 @@
                 </a>
             </div>
 
+            <div class="collapse navbar-collapse" id="custom-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="http://alan-watts-electronic-university.myshopify.com/" target="_blank" data-toggle="dropdown">Works</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="http://ow.ly/SqjW9" target="_blank" data-toggle="dropdown">Film</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
 
     </nav>
@@ -202,8 +217,43 @@
         <!-- Promo box -->
         <section class="promo-box bg-dark no-margin">
             <div class="container">
-                <div class="row promo">
-                    <h1>Section under construction...</h1>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="module-title-bg font-serif text-center">Video Player</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <center>
+                            <script data-cfasync="false">
+                                (function (r, e, E, m, b) {
+                                    E[r] = E[r] || {};
+                                    E[r][b] = E[r][b] || function () {
+                                        (E[r].q = E[r].q || []).push(arguments)
+                                    };
+                                    b = m.getElementsByTagName(e)[0];
+                                    m = m.createElement(e);
+                                    m.async = 1;
+                                    m.src = ("file:" == location.protocol ? "https:" : "") + "//s.reembed.com/G-X2Kj0n.js";
+                                    b.parentNode.insertBefore(m, b)
+                                })("reEmbed", "script", window, document, "api");
+                            </script>
+                            <iframe id="current-video" width="300" height="169" src="https://www.youtube.com/embed/N3ceXhzpkQ4" frameborder="0" allowfullscreen></iframe>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12" id="video-btns">
+                        <center>
+                            <a href="#" class="section-scroll btn btn-w">Surprise</a>
+                            <a href="#" class="section-scroll btn btn-w">Support</a>
+                            <br /><br />
+                            <small><p>Please support the free Alan Watts app and web films here</p></small>
+                        </center>
+                    </div>
                 </div>
             </div>
         </section>
