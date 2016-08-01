@@ -741,10 +741,16 @@
     // after gDoc loads
     function insertDoc(data, tabletop) {
         // caching
-        var layout = data.layout.elements[0];
-        var layoutArray = data.layout.elements;
-        // basic info
-        $('title').text(layout.title);
+        var video = function() {
+            var random = Math.floor(Math.random() * data.videos.elements.length);
+            var randomVideo = data.videos.elements[random];
+            return 'https://www.youtube.com/embed/' + randomVideo.url;
+        }
+        $('a#surprise').click(function () {
+            $('iframe#current-video').attr('src', video());
+            console.log(video());
+        });
+
     }
 
     // calling and appending gDoc info
