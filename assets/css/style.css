@@ -3957,6 +3957,19 @@ a.call-btn:hover {
     img.cta-image-top-bottom {
         display: none;
     }
+    h1#bannerTitle {
+        font-size: 2em;
+        line-height: 0px;
+    }
+    p#bannerSubtext {
+        line-height: 0px;
+        margin-top: 75px;
+    }
+    a.call-btn {
+        display: block;
+        margin: 10px auto;
+        width: 75%;
+    }
 }
 
 div#video-section {
