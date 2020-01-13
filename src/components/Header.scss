@@ -1,0 +1,40 @@
+@import '../colors.scss';
+
+div.Header {
+    background-color: $grey;
+    height: 40vw;
+    background-image: url('../assets/alan-watts-boat-cropped.png');
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 70%;
+    border-bottom: solid medium $white;
+
+    >div {
+        padding: 25px;
+        box-sizing: border-box;
+        >p {
+            margin-bottom: -25px;
+            font-family: 'Gelasio', serif;
+            font-style: italic;
+        }
+        >img {
+            width: 100%;
+            max-width: 750px;
+        }
+        >a {
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            padding: 10px 25px;
+            font-size: 0.75em;
+            color: $white;
+            text-decoration: none;
+            border: solid thin $white;
+            margin-right: 15px;
+            text-transform: uppercase;
+        }
+        >a:hover {
+            color: #aaa;
+        }
+    }
+}

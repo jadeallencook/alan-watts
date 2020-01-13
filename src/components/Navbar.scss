@@ -1,0 +1,16 @@
+@import '../colors.scss';
+
+.Navbar {
+    background-color: $grey;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    > div {
+        img {
+            height: 35px;
+            float: left;
+            margin-left: 25px;
+        }
+    }
+}

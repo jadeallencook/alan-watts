@@ -1,0 +1,28 @@
+@import '../colors.scss';
+
+div.Youtube {
+    padding: 25px;
+    max-width: 1290px;
+    margin: 0px auto;
+    >iframe {
+        border: none;
+        display: block;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    >div.thumb {
+        background-color: $white;
+        height: 112px;
+        width: 200px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        float: left;
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer;
+    }
+    >div.thumb:hover {
+        opacity: 0.5;
+    }
+}

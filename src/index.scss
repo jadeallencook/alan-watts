@@ -1,0 +1,13 @@
+@import './colors.scss';
+
+body {
+  margin: 0;
+  font-family: 'Robato', sans-serif;
+  background-color: $grey;
+  color: $white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
