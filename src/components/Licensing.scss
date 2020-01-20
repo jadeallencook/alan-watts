@@ -7,3 +7,21 @@
     margin: 0px auto;
     text-align: left;
 }
+
+@media only screen and (max-width: 750px) {
+    .Licensing {
+        padding: 0;
+        >h2 {
+            font-size: 1.25em;
+        }
+        >h3 {
+            font-size: 1em;
+        }
+        >p {
+            font-size: 0.9em;
+        }
+        >ul {
+            font-size: 0.8em;
+        }
+    }
+}
