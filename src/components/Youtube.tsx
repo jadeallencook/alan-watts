@@ -7,18 +7,21 @@ const Youtube: React.FC = () => {
 
     return (
         <div className="Youtube">
-            <iframe title="alan watts playlist" width="630" height="365" src={`https://www.youtube.com/embed/${currentVideo}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-            {
-                videos.map(video => {
-                    return (
-                        <div className="thumb" key={video} style={{
-                            backgroundImage: `url(${`https://img.youtube.com/vi/${video}/0.jpg`})`
-                        }} onClick={() => {
-                            setVideo(video);
-                        }}></div>
-                    )
-                })
-            }
+            <h2>Explore Our Video Collection</h2>
+            <iframe title="alan watts playlist" src={`https://www.youtube.com/embed/${currentVideo}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div>
+                {
+                    videos.map(video => {
+                        return (
+                            <div className="thumb" key={video} style={{
+                                backgroundImage: `url(${`https://img.youtube.com/vi/${video}/0.jpg`})`
+                            }} onClick={() => {
+                                setVideo(video);
+                            }}></div>
+                        )
+                    })
+                }
+            </div>
         </div>
     );
 }

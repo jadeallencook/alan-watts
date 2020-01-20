@@ -2,16 +2,27 @@
 
 div.Youtube {
     padding: 25px;
+    width: 90%;
     max-width: 1290px;
+    height: 450px;
     margin: 0px auto;
+
+    >h2 {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
     >iframe {
         border: none;
         display: block;
         float: left;
         margin-right: 15px;
         margin-bottom: 15px;
+        width: 630px;
+        height: 367px;
     }
-    >div.thumb {
+
+    >div>div.thumb {
         background-color: $white;
         height: 112px;
         width: 200px;
@@ -22,7 +33,31 @@ div.Youtube {
         background-position: center center;
         cursor: pointer;
     }
-    >div.thumb:hover {
+
+    >div>div.thumb:hover {
         opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width: 1433px) {
+    div.Youtube {
+        >iframe {
+            height: 366px;
+        }
+        >div>div.thumb {
+            height: 61px;
+            width: 110px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    div.Youtube {
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    div.Youtube {
     }
 }

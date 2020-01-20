@@ -1,0 +1,27 @@
+@import '../colors.scss';
+
+.Footer {
+    background-color: $dark;
+    border-top: solid medium $white;
+    text-align: left;
+
+    >div {
+        display: grid;
+        width: 90%;
+        max-width: 1290px;
+        margin: 0px auto;
+        padding: 10px 0px;
+        grid-template-columns: 1fr 1fr;
+
+        >div {
+            font-size: 0.75em;
+            >img {
+                height: 35px;
+            }
+        }
+        >div:last-child {
+            text-align: right;
+            line-height: 3em;
+        }
+    }
+}
