@@ -33,39 +33,13 @@
 
 @media only screen and (max-width: 375px) {
     .Licensing {
-        >h2 {
-            font-size: 1.125em;
-        }
         >h3 {
             font-size: 0.9em;
-        }
-        >p {
-            font-size: 0.9em;
-        }
-        >ul {
-            font-size: 0.8em;
         }
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .Licensing {
-        >h2 {
-            font-size: 0.95em;
-        }
-        >h3 {
-            font-size: 0.8em;
-        }
-        >p {
-            font-size: 0.8em;
-        }
-        >ul {
-            font-size: 0.7em;
-        }
-    }
-}
-
-@media only screen and (max-width: 320px) {
     .Licensing {
         >h2 {
             font-size: 0.95em;

@@ -39,7 +39,6 @@ div.Youtube {
     }
 }
 
-//iPad Pro
 @media only screen and (max-width: 1433px) {
     div.Youtube {
         >iframe {
@@ -53,7 +52,6 @@ div.Youtube {
     }
 }
 
-// iPad
 @media only screen and (max-width: 768px) {
     div.Youtube {
         >iframe {
@@ -88,8 +86,6 @@ div.Youtube {
 
 @media only screen and (max-width: 411px) {
     div.Youtube {
-        padding: 0;
-        margin-bottom: 20px;
         >iframe {
             width: 338px;
             height: 180px;
@@ -98,7 +94,6 @@ div.Youtube {
             height: 70px;
             width: 162px;
         }
-        margin-bottom: 200px;
     }
 }
 
@@ -109,7 +104,6 @@ div.Youtube {
             height: 170px;
         } 
         >div>div.thumb {
-            height: 70px;
             width: 145px;
         }
         margin-bottom: 190px;
@@ -135,9 +129,6 @@ div.Youtube {
 
 @media only screen and (max-width: 320px) {
     div.Youtube {
-        >h2 {
-            font-size: 1em;
-        }
         >iframe {
             width: 250px;
             height: 140px;
