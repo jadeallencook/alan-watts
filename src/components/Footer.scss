@@ -11,7 +11,7 @@
         max-width: 1290px;
         margin: 0px auto;
         padding: 10px 0px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.25fr;
 
         >div {
             font-size: 0.75em;
@@ -34,6 +34,24 @@
                 font-size: 0.55em;
                 >b {
                     font-size: inherit;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .Footer {
+        >div {
+            >div {
+                margin: auto 0;
+                font-size: 0.15em;
+                >b {
+                    font-size: inherit;
+                }
+                >img {
+                    height: 30px;
+                    width: 120px;
                 }
             }
         }
