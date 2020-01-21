@@ -38,3 +38,47 @@ div.Header {
         }
     }
 }
+
+@media only screen and (max-width: 750px) {
+    div.Header {
+        >div {
+            >p {
+                font-size: 0.25em;
+                margin-bottom: -5px;
+            }
+            >img {
+                width: 100%;
+                max-width: 280px;
+            }
+            >a {
+                margin: 0 5px;
+                font-size: 0.25em;
+                padding: 10px 9px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div.Header {
+        >div {
+            >a {
+                font-size: 0.25em;
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    div.Header {
+        >div {
+            >img {
+                margin-bottom: -10px;
+            }
+            >a {
+                font-size: 7px;
+            }
+        }
+    }
+}

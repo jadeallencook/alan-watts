@@ -52,12 +52,91 @@ div.Youtube {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
     div.Youtube {
+        >iframe {
+            width: 660px;
+            height: 350px;
+            margin-left: 15px;
+        } 
+        >div>div.thumb {
+            height: 65px;
+            width: 116px;
+            margin: 5px 11px;
+        }
+        margin-bottom: 120px;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 414px) {
     div.Youtube {
+        padding: 0;
+        margin-bottom: 20px;
+        >iframe {
+            width: 340px;
+            height: 180px;
+        } 
+        >div>div.thumb {
+            height: 70px;
+            width: 164px;
+        }
+        margin-bottom: 200px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    div.Youtube {
+        >iframe {
+            width: 338px;
+            height: 180px;
+        } 
+        >div>div.thumb {
+            height: 70px;
+            width: 162px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div.Youtube {
+        >iframe {
+            width: 305px;
+            height: 170px;
+        } 
+        >div>div.thumb {
+            width: 145px;
+        }
+        margin-bottom: 190px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    div.Youtube {
+        >h2 {
+            font-size: 1em;
+        }
+        >iframe {
+            width: 294px;
+            height: 160px;
+        } 
+        >div>div.thumb {
+            height: 75px;
+            width: 140px;
+        }
+        margin-bottom: 200px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    div.Youtube {
+        >iframe {
+            width: 250px;
+            height: 140px;
+        } 
+        >div>div.thumb {
+            height: 65px;
+            width: 118px;
+        }
+        margin-bottom: 130px;
     }
 }
