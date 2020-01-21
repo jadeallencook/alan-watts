@@ -54,10 +54,21 @@ div.Youtube {
 
 @media only screen and (max-width: 1000px) {
     div.Youtube {
+        >iframe {
+            width: 660px;
+            height: 330px;
+            margin-left: 15px;
+        } 
+        >div>div.thumb {
+            height: 65px;
+            width: 116px;
+            margin: 5px 11px;
+        }
+        margin-bottom: 100px;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 420px) {
     div.Youtube {
         padding: 0;
         margin-bottom: 20px;
@@ -66,16 +77,22 @@ div.Youtube {
             height: 207px;
         } 
         >div>div.thumb {
-            background-color: $white;
             height: 52px;
             width: 100px;
-            margin-right: 10px;
-            margin-left: 13px;
-            margin-bottom: 15px;
-            float: left;
-            background-size: cover;
-            background-position: center center;
-            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div.Youtube {
+        padding: 0;
+        >iframe {
+            width: 55px;
+            height: 57px;
+        } 
+        >div>div.thumb {
+            height: 52px;
+            width: 200px;
         }
     }
 }
