@@ -48,3 +48,16 @@ div.About {
         }
     }
 }
+
+@media only screen and (max-width: 320px) {
+    div.About {
+        >div {
+            >h2 {
+                font-size: 0.8em;
+            }
+            >p {
+                font-size: 0.55em;
+            }
+        }
+    }
+}
