@@ -116,6 +116,23 @@ div.Youtube {
     }
 }
 
+@media only screen and (max-width: 360px) {
+    div.Youtube {
+        >h2 {
+            font-size: 1em;
+        }
+        >iframe {
+            width: 294px;
+            height: 160px;
+        } 
+        >div>div.thumb {
+            height: 75px;
+            width: 140px;
+        }
+        margin-bottom: 200px;
+    }
+}
+
 @media only screen and (max-width: 320px) {
     div.Youtube {
         >h2 {

@@ -79,6 +79,27 @@ div.Header {
     }
 }
 
+@media only screen and (max-width: 360px) {
+    div.Header {
+        >div {
+            >p {
+                font-size: 0.25em;
+                margin-bottom: -5px;
+            }
+            >img {
+                width: 100%;
+                max-width: 280px;
+                margin-bottom: -10px;
+            }
+            >a {
+                margin: 0 5px;
+                font-size: 7px;
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 320px) {
     div.Header {
         >div {
