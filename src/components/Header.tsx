@@ -7,7 +7,7 @@ const Header: React.FC = () => {
         <div className="Header animated fadeIn">
             <div></div>
             <div>
-                <p className="animated fadeInDown">Out of your mind with</p>
+                <p className="animated fadeInDown">The recorded works of</p>
                 <img src={Logo} className="animated flipInX" alt="alan watts signature" />
                 <br /><br />
                 <a href="https://alan-watts-electronic-university.myshopify.com" className="animated fadeIn" rel="noopener noreferrer" target="_blank">Audio Downloads</a>
