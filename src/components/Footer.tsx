@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <div className="Footer">
             <div>
                 <div>
-                    <img src={Logo} />
+                    <img src={Logo} alt="alan watts signature logo" />
                 </div><div>
                     <b>Alan Watts Audio Project</b> | Copyright 2020
                 </div>

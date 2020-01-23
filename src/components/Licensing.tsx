@@ -4,8 +4,8 @@ import './Licensing.scss';
 const Licensing: React.FC = () => {
     return (
         <div className="Licensing">
-            <h3>Creative Film Use of Alan Watts Audio:</h3>
-            <h2>Licensing For Non-Profit, Educational and Inspirational Use:</h2>
+            <h2>Creative Film Use of Alan Watts Audio</h2>
+            <h3>Licensing For Non-Profit, Educational and Inspirational Use:</h3>
             <ul>
                 <li>Short filmmakers producing non-commercial educational or inspirational content may use one sample clip of up to 5 minutes in length.</li>
                 <li>The film must be original and not violate visual or music copyrights.</li>

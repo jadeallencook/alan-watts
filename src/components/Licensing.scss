@@ -1,57 +1,20 @@
 @import '../colors.scss';
 
 .Licensing {
-    padding: 25px;
     width: 90%;
     max-width: 1290px;
     margin: 0px auto;
     text-align: left;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 600px) {
     .Licensing {
-        padding: 0;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .Licensing {
-        >h2 {
-            font-size: 1.25em;
-        }
-        >h3 {
-            font-size: 1em;
-        }
-        >p {
-            font-size: 0.9em;
-        }
         >ul {
-            font-size: 0.8em;
+            padding: 15px;
+            >li {
+                margin-bottom: 10px;
+            }
         }
     }
-}
 
-@media only screen and (max-width: 375px) {
-    .Licensing {
-        >h3 {
-            font-size: 0.9em;
-        }
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .Licensing {
-        >h2 {
-            font-size: 0.95em;
-        }
-        >h3 {
-            font-size: 0.8em;
-        }
-        >p {
-            font-size: 0.8em;
-        }
-        >ul {
-            font-size: 0.7em;
-        }
-    }
 }
