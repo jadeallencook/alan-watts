@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Alan-Watts/build/static/css/main.2343adc2.chunk.css",
+    "main.js": "/Alan-Watts/build/static/js/main.5d8dcd0f.chunk.js",
+    "main.js.map": "/Alan-Watts/build/static/js/main.5d8dcd0f.chunk.js.map",
+    "runtime-main.js": "/Alan-Watts/build/static/js/runtime-main.be15e15c.js",
+    "runtime-main.js.map": "/Alan-Watts/build/static/js/runtime-main.be15e15c.js.map",
+    "static/css/2.ff29e5f6.chunk.css": "/Alan-Watts/build/static/css/2.ff29e5f6.chunk.css",
+    "static/js/2.42bc84fc.chunk.js": "/Alan-Watts/build/static/js/2.42bc84fc.chunk.js",
+    "static/js/2.42bc84fc.chunk.js.map": "/Alan-Watts/build/static/js/2.42bc84fc.chunk.js.map",
+    "index.html": "/Alan-Watts/build/index.html",
+    "precache-manifest.a988d2bd8c3c0d379ecd99e755705f32.js": "/Alan-Watts/build/precache-manifest.a988d2bd8c3c0d379ecd99e755705f32.js",
+    "service-worker.js": "/Alan-Watts/build/service-worker.js",
+    "static/css/2.ff29e5f6.chunk.css.map": "/Alan-Watts/build/static/css/2.ff29e5f6.chunk.css.map",
+    "static/css/main.2343adc2.chunk.css.map": "/Alan-Watts/build/static/css/main.2343adc2.chunk.css.map",
+    "static/js/2.42bc84fc.chunk.js.LICENSE": "/Alan-Watts/build/static/js/2.42bc84fc.chunk.js.LICENSE",
+    "static/media/Header.scss": "/Alan-Watts/build/static/media/mobile-boat-header.8fc433b6.png",
+    "static/media/About.scss": "/Alan-Watts/build/static/media/ocean banner.243fe248.png",
+    "static/media/white-logo.png": "/Alan-Watts/build/static/media/white-logo.10bf673e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be15e15c.js",
+    "static/css/2.ff29e5f6.chunk.css",
+    "static/js/2.42bc84fc.chunk.js",
+    "static/css/main.2343adc2.chunk.css",
+    "static/js/main.5d8dcd0f.chunk.js"
+  ]
+}
