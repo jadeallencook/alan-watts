@@ -7,9 +7,9 @@
     >div {
         display: grid;
         grid-template-columns: 1fr 1.25fr;
-        margin: 0px auto;
+        margin: 0 auto;
         max-width: 1290px;
-        padding: 10px 0px;
+        padding: 10px 0;
         width: 90%;
         >div {
             font-size: 0.3em;
@@ -18,9 +18,9 @@
             }
         }
         >div:last-child {
+            line-height: 3em;
             margin: auto 0;
             text-align: right;
-            line-height: 3em;
         }
     }
 }

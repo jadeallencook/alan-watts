@@ -5,10 +5,10 @@ div.About {
     background-image: url('../assets/ocean\ banner.png');
     background-size: cover;
     border-top: medium solid $white;
-    padding: 25px 0px;
+    padding: 25px 0;
     text-align: left;
     >div {
-        margin: 0px auto;
+        margin: 0 auto;
         max-width: 1290px;
         width: 90%;
     }
