@@ -1,15 +1,15 @@
 @import '../colors.scss';
 
 div.About {
+    border-bottom: medium solid $white;
     background-image: url('../assets/ocean\ banner.png');
     background-size: cover;
-    text-align: left;
     border-top: medium solid $white;
-    border-bottom: medium solid $white;
     padding: 25px 0px;
+    text-align: left;
     >div {
-        width: 90%;
-        max-width: 1290px;
         margin: 0px auto;
+        max-width: 1290px;
+        width: 90%;
     }
 }
