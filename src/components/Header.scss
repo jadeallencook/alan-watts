@@ -1,40 +1,49 @@
 @import '../colors.scss';
 
 div.Header {
+    align-items: center;
     background-color: $grey;
-    height: 40vw;
     background-image: url('../assets/alan-watts-boat-cropped.png');
     background-size: cover;
     background-position: center center;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 70%;
     border-bottom: solid medium $white;
-
+    display: grid;
+    grid-template-columns: 1fr 70%;
+    height: 40vw;
     >div {
-        padding: 25px;
         box-sizing: border-box;
+        padding: 25px;
         >p {
-            margin-bottom: -25px;
             font-family: 'Gelasio', serif;
             font-style: italic;
+            margin-bottom: -25px;
         }
         >img {
-            width: 100%;
             max-width: 750px;
+            width: 100%;
         }
         >a {
             background-color: rgba($color: #000000, $alpha: 0.5);
-            padding: 10px 25px;
-            font-size: 0.75em;
-            color: $white;
-            text-decoration: none;
             border: solid thin $white;
+            color: $white;
+            font-size: 0.75em;
             margin-right: 15px;
+            padding: 10px 25px;
+            text-decoration: none;
             text-transform: uppercase;
         }
         >a:hover {
             color: #aaa;
+        }
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    div.Header {
+        >div {
+            >a {
+                padding: 10px 12px;
+            }
         }
     }
 }
@@ -47,18 +56,16 @@ div.Header {
         height: 80vw;
         >div {
             >p {
-                margin-top: -30px;
-                margin-bottom: 5px;
+                margin: -30px auto 5px auto;
             }
             >img {
-                width: 100%;
                 max-width: 280px;
+                width: 100%;
             }
             >a {
                 display: block;
-                margin: 0px 0px 15px 0px;
                 font-size: 0.25em;
-                padding: 10px 9px;
+                margin: 0 0 15px 0;
             }
         }
     }

@@ -1,15 +1,15 @@
 @import '../colors.scss';
 
 .Navbar {
+    align-items: center;
     background-color: $grey;
-    height: 50px;
     display: grid;
     grid-template-columns: 50% 50%;
-    align-items: center;
+    height: 50px;
     > div {
         img {
-            height: 35px;
             float: left;
+            height: 35px;
             margin-left: 25px;
         }
     }
